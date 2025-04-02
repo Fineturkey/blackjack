@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlackJack Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1>♡♦ Welcome to BlackJack! ♠♧</h1>
+    <main>
+        <section>
+            <h2>Game Controls</h2>
+            <button onclick="startGame()">Start Game</button>
+            <button onClick="dealGame()">Deal</button>
+        </section>
+        <section>
+            <h2>Player Actions</h2>
+            <input type="text" id="playerName" placeholder="Enter Player Name">
+            <button onclick="addPlayer()">Add Player</button>
+        </section>
+        <section>
+            <button class="buttontwo" onclick="hit()">HIT</button>
+            <button class="buttontwo" onclick="stand()">STAND</button>
+        </section>
+        <section>
+            <h2>Game State</h2>
+            <button onclick="getGameState()">Show Cards</button>
+            <button onclick="dealerTurn()">Dealer Turn</button>
+            <h2>Dealer's Hand</h2>
+            <div id="dealer-hand" class="hand"></div>
+
+            <h2>Player's Hand</h2>
+            <div id="player-hand" class="hand"></div>
+        </section>
+    </main>
+    <footer>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

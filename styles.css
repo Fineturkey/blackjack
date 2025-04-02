@@ -1,0 +1,78 @@
+body {
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  background-color: #097709;
+  color: #ffffff;
+}
+
+h1 {
+  margin: 0;
+
+}
+
+header p {
+  margin: 0.5rem 0 0;
+}
+
+main {
+  padding: 1rem;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+button {
+  margin: 5px;
+  padding: 10px 10px;
+  background-color: #FFEB3B;
+  color: #000000;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #FFC107;
+}
+
+input {
+  padding: 0.5rem;
+  margin-right: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+pre {
+  background-color: #f9f9f9;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow-x: auto;
+}
+
+/* Overlapping effect */
+.card {
+    width: 80px;
+    height: auto;
+    position: absolute;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Space out cards while keeping them slightly overlapped */
+.card:nth-child(1) { left: 0; z-index: 1; }
+.card:nth-child(2) { left: 20px; z-index: 2; }
+.card:nth-child(3) { left: 40px; z-index: 3; }
+.card:nth-child(4) { left: 60px; z-index: 4; }
+.card:nth-child(5) { left: 80px; z-index: 5; }
+
+/* Dealer cards should be rotated slightly */
+#dealerHand .card {
+    transform: rotate(180deg);
+}
+
