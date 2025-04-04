@@ -1,7 +1,3 @@
-# Template for CPSC2720 Minor Project creating a card game
-
-Last Updated: 2023-12-15 by Nicole Wilson &lt;n.wilson@uleth.ca&gt;
-
 Notes:
 
 * The Makefile and .gitlab-ci.yml files are set up to run on Ubuntu.
